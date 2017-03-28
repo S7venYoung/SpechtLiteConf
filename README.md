@@ -22,6 +22,10 @@ baidu\.com
 ## 具体图文教程
 > 1. [微信链接](http://mp.weixin.qq.com/s/nIIZ7KprczpcBUUSsWDh2Q)
 
+## 微信规则讨论群
+
+ ![image](https://github.com/S7venYoung/SpechtLiteConf-ADB/blob/master/WechatIMG7.jpeg)
+ 
 ## MIT License (MIT)
 
 The MIT License (MIT)
