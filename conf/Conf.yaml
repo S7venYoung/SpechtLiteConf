@@ -61,6 +61,14 @@ adapter:
 # Rule will be matched one by one.
 rule:
   - type: iplist
+  # Reject requests based on the IP address of the host.
+    file: ~/.SpechtLite/rejectiprange
+    adapter: reject
+  - type: list
+  # Reject requests based on whether the host domain matches the given regular expressions.
+    file: ~/.SpechtLite/rejectlist
+    adapter: reject
+  - type: iplist
   # Forward polluted host IP address
     file: ~/.SpechtLite/pollutedip
     adapter: proxy
@@ -80,14 +88,6 @@ rule:
   # Forward requests based on the IP address of the host.
     file: ~/.SpechtLite/proxyiprange
     adapter: proxy
-  - type: list
-  # Reject requests based on whether the host domain matches the given regular expressions.
-    file: ~/.SpechtLite/rejectlist
-    adapter: reject
-  - type: iplist
-  # Reject requests based on the IP address of the host.
-    file: ~/.SpechtLite/rejectiprange
-    adapter: reject
   - type: country
   # When the location is unknown. Usually this means this is resolved an Intranet IP.
     country: CN
